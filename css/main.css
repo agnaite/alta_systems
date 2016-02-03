@@ -1,0 +1,411 @@
+body {
+	padding-bottom: 100px;
+}
+
+.navbar,
+.navbar-default,
+.navbar-header{
+	background-color: rgb(10, 114, 181);
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	border-radius: 0;
+	margin-bottom: 0;
+
+}
+.navbar,
+.navbar-default{
+	padding: 8px 0;
+}
+
+.logo {
+	max-width: 40px;
+	float: left;
+	margin: 5px 2px 0 0;
+}
+
+.alta-logo {
+	max-width: 80px;
+	float: left;
+	margin: 4px 2px 0 0;
+}
+
+.navbar-default .navbar-brand {
+	vertical-align: middle;
+	z-index: 10;
+	display: inline;
+	font-size: 1.1em;
+	margin-top: 5px;
+	color: rgb(10, 114, 181);
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: #286090;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #286090;
+}
+
+ .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: rgb(10, 114, 181);
+}
+
+.navbar-default .navbar-toggle {
+    color: rgb(10, 114, 181);
+		border-color: rgb(10, 114, 181);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: rgb(10, 114, 181);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(10, 114, 181);
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 580px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  min-height: 580px;
+  width: 100%;
+}
+
+.overlay { 
+  color:#4d4d4d;
+  position:absolute;
+  z-index:12;
+  margin-top: 0px;
+  width:100%;
+  text-align:center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(255,255,255,0.6);
+  padding: 25px;
+
+}
+
+.overlay h1 {
+	font-size: 2.2em;
+	display: inline;
+}
+
+.thumbs {
+	margin: 0 auto;
+	margin-top: -20px;
+}
+
+.thumbnail {
+	text-align: center;
+	min-height: 260px;
+}
+
+.thumb-icons {
+	font-size: 3em;
+	padding-top: 10px;
+}
+
+/*.caption .btn-primary {
+	background-color: #f0ad4e;
+	border-color: #f0ad4e;
+}*/
+
+.index-jumbotron {
+	margin: 16px;
+	border-radius: 4px;
+	padding-top: 20px;
+}
+
+.index-jumbotron h2 {
+	padding-left: 20px;
+	padding-bottom: 10px;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 1.8em;
+	color: rgb(10, 114, 181);
+	font-weight: 600;
+}
+
+.media {
+	padding-left: 20px;
+}
+
+.media .media-object {
+	border: 2px solid white;
+}
+
+.media .media-object:hover {
+	border: 2px solid #286090;
+
+}
+
+.navbar-fixed-bottom .container {
+	width: 100%;
+	margin-left: 0;
+	display: block;
+}
+
+.icons {
+	float: left;
+	padding: 14px 0;
+}
+
+a.flaticon {
+	color:#696969;
+}
+
+.flaticon,
+.flaticon:before{
+	font-size: 30px;
+	margin-left:0;
+}
+
+.flaticon:hover,
+.flaticon:before:hover{
+	color: #286090;
+	text-decoration:none;
+
+}
+
+.sec-links {
+	float: right;
+	padding: 10px 0;
+}
+
+.sec-links a{
+	display: block;
+	text-align: right;
+	font-size: 0.8em;
+	color: #696969;
+}
+
+.sec-links a:hover {
+	text-decoration: none;
+	color: #286090;
+
+}
+
+/*************************************************************************************************************************************************
+PRODUCTS - PUBLIC SAFETY
+*************************************************************************************************************************************************/
+
+.public-safety-jumbotron {
+	text-align: center;
+	padding: 16px 0;
+}
+.public-safety-jumbotron h3 {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: 600;
+	color: white;
+	margin:0;
+}
+
+.tactical-logo {
+	max-width: 70px;
+	margin-bottom: -14px;
+}
+
+.tactical-logo-alta {
+	max-width: 120px;
+	margin-bottom: -6px;
+}
+
+#public-safety-tagline {
+	font-size: 1.2em;
+	text-align: center;
+	color: rgb(10, 114, 181);
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	margin-bottom: 30px;
+}
+
+#public-safety-bullets {
+	margin-top: 40px;
+}
+
+.public-safety-bullet-title{
+	text-align: center;
+	margin-top: 40px;
+	color: rgb(10, 114, 181);
+}
+
+.public-safety-case-study-title  {
+	text-align: center;
+	margin-top: 60px;
+	color: rgb(10, 114, 181);
+}
+
+.public-safety-case-study p {
+	text-align: justify;
+	font-size: 1em;
+}
+
+/*************************************************************************************************************************************************
+CONTACT
+*************************************************************************************************************************************************/
+
+.contact-jumbotron {
+	text-align: center;
+	padding: 30px 0;
+}
+.contact-jumbotron h3 {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: 600;
+	color: white;
+	margin: 10px 0 0 0;
+}
+
+.contact-jumbotron h4 {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: white;
+	margin: 10px 0 0 0;
+	display: inline;
+}
+
+/*.contact-logo {
+	max-width: 70px;
+	margin-top: -25px;
+}*/
+
+.contact-logo-alta {
+	max-width: 120px;
+	margin-top: -25px;
+	/*margin-left: -12px;*/
+}
+.contact {
+	text-align: center;
+	margin-top: 16px;
+}
+.contact h3{
+	color: rgb(10, 114, 181);
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.3em;
+
+}
+/*************************************************************************************************************************************************
+RESPONSIVE STUFF
+*************************************************************************************************************************************************/
+
+@media screen and (max-width: 960px) {
+	.carousel .item {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		max-width: 50px;
+		margin:0 0 0 12px;
+	}
+
+	.carousel img {
+		min-height: 0;
+	}
+
+	.carousel .item {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.carousel .item {
+		height: 300px;
+	}
+
+	.thumbs {
+		margin-top: -40px;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	.carousel .item {
+		height: 220px;
+	}
+
+	.thumbs {
+		margin-top: -60px;
+	}
+
+	.caption .btn {
+		font-size: 12px;
+		padding: 4px 10px;
+	}
+
+	.caption h4 {
+		font-size: 16px;
+	}
+
+	.thumb-icons {
+		font-size: 2em;
+	}
+
+	.jumbotron {
+		padding: 3px 10px 10px 10px;
+	}
+
+	.jumbotron h2 {
+		font-size: 20px;
+	}
+
+	.media-heading {
+		font-size: 16px;
+	}
+
+	.media-body {
+		font-size: 12px;
+		text-align: justify;
+	}
+
+	.media {
+		padding-left: 0px;
+	}
+
+
+	/*PRODUCTS --> PUBLIC SAFETY*/
+
+	.public-safety-bullet-title {
+		margin-bottom: 30px;
+	}
+
+	.public-safety-bullet-title h3 {
+		font-size: 1.4em;
+	}
+
+	.public-safety-case-study-title {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	.public-safety-case-study-title h3 {
+		font-size: 1.4em;
+	}
+
+	#public-safety-bullets h5,
+	#public-safety-bullets p {
+		text-align: center;
+	}
+}
