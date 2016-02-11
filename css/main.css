@@ -16,8 +16,10 @@ body {
 
 .navbar,
 .navbar-default {
-	background-image: linear-gradient(120deg, #115294, #117a94);
-	padding: 16px 0;
+	/*background-color: rgb(0, 113, 191);*/
+	background-image: linear-gradient(120deg, rgb(0, 113, 191), #115294);
+	padding: 0px 0;
+
 }
 
 .navbar,
@@ -28,28 +30,18 @@ body {
 	border-radius: 0;
 	margin-bottom: 0;
 	border: none;
-
 }
 
 .logo {
-	max-width: 40px;
+	max-width: 280px;
 	float: left;
-	margin: 5px 2px 0 0;
+	margin-left: -15px;
+	/*margin: 5px 2px 0 0;*/
 }
 
-.alta-logo {
-	max-width: 80px;
-	float: left;
-	margin: 4px 2px 0 0;
-}
+.navbar-right {
+	margin-top: 28px;
 
-.navbar-default .navbar-brand {
-	vertical-align: middle;
-	z-index: 10;
-	display: inline;
-	font-size: 1.6em;
-	margin-top: 5px;
-	color: #fff;
 }
 
 .navbar-default .navbar-nav>.open>a:hover,
@@ -59,16 +51,16 @@ ul.dropdown-menu  {
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-	color: #7FDBFF; /*baby blue*/
+	color: #f6b744; /*light orange*/
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-	color: #555;
+	color: #f6b744; /*light orange*/
 }
 
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
-	color: #7FDBFF; /*baby blue*/
+	color: #f6b744; /*light orange*/
 }
 
  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -76,8 +68,7 @@ ul.dropdown-menu  {
 }
 
 .navbar-default .navbar-toggle {
-    color: red;
-		border-color: #fff;
+	border-color: #fff;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -99,15 +90,6 @@ ul.dropdown-menu  {
 	border-color: transparent;
 }
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 20px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 1;
-}
-
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 580px;
@@ -121,8 +103,66 @@ ul.dropdown-menu  {
   width: 100%;
 }
 
+.carousel-indicators li{
+	width: 15px;
+	height: 15px;
+}
+
+.carousel-indicators .active {
+	width: 17px;
+	height: 17px;
+}
+
+.carousel-caption{
+	font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
+	z-index: 1;
+  margin-bottom: 380px;
+}
+
 .carousel-caption h3 {
-	font-size: 2.8em;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.carousel-caption h4 {
+	font-weight: 300;
+	font-size: 28px;
+}
+.caption1 {
+	margin-bottom: 320px;
+	width: 100%;
+	left: 0;
+	padding-left: 15px;	
+}
+
+.caption2 {
+	left: -240px;
+}
+
+.caption4 {
+	left: -400px;
+	margin-bottom: 380px;
+}
+
+.caption5 h4{
+	font-size: 26px;
+}
+
+.carousel-btn {
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-top: 10px;
+	background-color: #FFA500;
+	border-color: #FFA500;
+	color: white;
+	font-weight: 400;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-btn:hover {
+  background-color: #f6b744;
+  border-color: #f6b744;
+  color: white;
 }
 
 .thumbs {
@@ -141,16 +181,15 @@ ul.dropdown-menu  {
 }
 
 .thumbnail .caption a  {
-	background-color: #1ac572;
-	border-color: #1ac572;
-	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+	background-color: #FFA500;
+	border-color: #FFA500;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/*.caption .btn-primary {
-	background-color: #f0ad4e;
-	border-color: #f0ad4e;
-}*/
-
+.thumbnail .caption a:hover {
+  background-color: #f6b744;
+  border-color: #f6b744;
+}
 .index-jumbotron {
 	margin: 16px;
 	border-radius: 4px;
@@ -184,6 +223,7 @@ ul.dropdown-menu  {
 	margin-left: 0;
 	display: block;
 	background-color: #eee;
+  border: 1px solid #ddd;
 }
 
 .icons {
@@ -194,6 +234,7 @@ ul.dropdown-menu  {
 .icons a {
 	text-decoration: none;
 	padding-right: 4px;
+  margin-bottom: 5px;
 }
 
 
@@ -220,6 +261,7 @@ a.symbol:before {
 #twitter, 
 #facebook,
 #instagram,
+#google,
 #linkedin,
 #youtube {
 	font-size: 2.6em;
@@ -247,8 +289,12 @@ a.symbol:before {
 	color: #bb0000;
 }
 
+#google:hover {
+	color: #dd4b39;
+}
+
 .sitemap {
-	background-color: #aaa;
+	background-color: #696969;
 	width: 100%;
 	margin: 40px 0 0 0;
 	padding: 20px 40px 100px 40px;
@@ -261,14 +307,20 @@ a.symbol:before {
 	text-transform: uppercase;
 	display: block;
 	padding-top: 10px;
-	color: #7FDBFF;
-	font-size: 14px;
+	color: #B0C4DE;
+	font-size: 15px;
 }
 
 .sitemap a {
 	display: block;
-	color: #fff;
-	font-size: 12px;
+	color: #F5FFFA;
+	font-size: 13px;
+}
+
+.sitemap a:hover {
+  color: #f6b744;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*************************************************************************************************************************************************
