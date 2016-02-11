@@ -6,5 +6,18 @@
     interval: 6000
   });
 
+var sitemapLoc = function() {
+  var bottom = $("html").outerHeight(true);
+  console.log(bottom);
+  $(".sitemap").css('top', bottom + "px");
+
+}
+
+sitemapLoc();
+
+$(window).resize(function(){
+  sitemapLoc();
+});
+
 
 </script>
