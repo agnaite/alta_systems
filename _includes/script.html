@@ -1,23 +1,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/blog.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
 
 <script type="text/javascript">
   $('.carousel').carousel({
     interval: 6000
   });
-
-var sitemapLoc = function() {
-  var bottom = $("html").outerHeight(true);
-  console.log(bottom);
-  $(".sitemap").css('top', bottom + "px");
-
-}
-
-sitemapLoc();
-
-$(window).resize(function(){
-  sitemapLoc();
-});
-
-
 </script>

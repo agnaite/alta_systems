@@ -1,0 +1,44 @@
+/*************************************************************************************************************************************************
+CONTACT
+*************************************************************************************************************************************************/
+
+.form-container  {
+/*	font-family: 'Open Sans', 'Helvetica', sans-serif;
+*/}
+
+.form-container .header {
+	color: rgb(0, 113, 191);
+}
+
+.form-container .contact-subtitle {
+	letter-spacing: 2px;
+}
+
+.contact-form {
+	padding-top: 20px;
+}
+
+.contact-form .form-group .form-control, 
+.contact-form textarea {
+	border-radius: 0;
+}
+
+.contact-form textarea {
+	font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: rgb(0, 113, 191);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact-btn {
+	margin-top: 16px;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.contact-success {
+	text-align: center;
+}

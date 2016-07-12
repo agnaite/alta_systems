@@ -10,14 +10,26 @@
     font-style: normal;
 }
 
+* {
+	margin: 0;
+	outline: none;
+	font-family: "Lato", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	padding-bottom: 100px;
-	height: 100%;
 }
 
 .navbar,
 .navbar-default {
-	/*background-color: rgb(0, 113, 191);*/
+	/*background-color: rgb(0, 113, 191);*/ /*ALTA COLOR*/
 	background-image: linear-gradient(120deg, rgb(0, 113, 191), #115294);
 	padding: 0px 0;
 
@@ -26,11 +38,11 @@ body {
 .navbar,
 .navbar-default,
 .navbar-header{
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
 	text-transform: uppercase;
 	border-radius: 0;
 	margin-bottom: 0;
 	border: none;
+	font-size: 16px;
 }
 
 .logo {
@@ -115,29 +127,27 @@ ul.dropdown-menu  {
 }
 
 .carousel-caption{
-	font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
 	z-index: 1;
-  margin-bottom: 380px;
 }
 
 .carousel-caption h3 {
-    font-weight: 400;
-    font-size: 32px;
+  font-weight: 400;
+  font-size: 32px;
 }
 
 .carousel-caption h4 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 28px;
 }
 .caption1 {
-	margin-bottom: 320px;
+	margin-bottom: 360px;
 	width: 100%;
 	left: 0;
 	padding-left: 15px;	
 }
 
-.caption2 {
-	left: -240px;
+.caption3 {
+	margin-bottom: 60px;
 }
 
 .caption4 {
@@ -145,25 +155,14 @@ ul.dropdown-menu  {
 	margin-bottom: 380px;
 }
 
-.caption5 h4{
-	font-size: 26px;
-}
-
 .carousel-btn {
-	font-size: 18px;
-	padding: 10px 20px;
+	font-size: 16px;
+	padding: 10px 10px;
 	margin-top: 10px;
 	background-color: #FFA500;
 	border-color: #FFA500;
 	color: white;
 	font-weight: 400;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.carousel-btn:hover {
-  background-color: #f6b744;
-  border-color: #f6b744;
-  color: white;
 }
 
 .thumbs {
@@ -176,60 +175,103 @@ ul.dropdown-menu  {
 	background-color: #eee;
 }
 
-.thumb-icons {
-	font-size: 3em;
+.thumbnail img {
 	padding-top: 10px;
+	width: 50px;
+}
+
+.thumbnail p {
+	font
+	font-weight: 300;
+	font-size: 14px;
 }
 
 .thumbnail .caption a  {
-	background-color: #FFA500;
+	background-color: #FFA500; /*orange*/
 	border-color: #FFA500;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.thumbnail .caption a:hover {
-  background-color: #f6b744;
-  border-color: #f6b744;
-}
 .news-wrap {
-  margin: 20px 10px 0px 10px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  border-top: 1px solid #ddd;
+  background-color: #eee;
+  margin: 20px 0 0px 0;
+  padding: 20px 40px 5px 40px;
+}
+
+.news-wrap h4 {
+	padding: 20px 0 10px 0;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#news-blog-link {
+	font-weight: 300;
+	max-width: 400px;
+	display: block;
+  margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+}
+
+#news-blog-link:hover {
+	text-decoration: none;
+}
+
+.news-wrap h4 a {
+	color: #333;
+	font-weight: 400;
+}
+
+.news-wrap h4 a:hover {
+	text-decoration: none;
+	color: rgb(0, 113, 191);
+}
+
+
+.news-wrap h6 {
+	color: #aaa;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.news-wrap p {
+	font-weight: 300;
+}
+
+.news-img0,
+.news-img1,
+.news-img2 {
+  width: 100%;
+  border: 1px solid #A9A9A9;
+  display: block;
+  margin: 0 auto;
+}
+
+.article0, 
+.article1,
+.article2 {
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+
+.article0 h6, 
+.article1 h6,
+.article2 h6 {
+	margin: -16px 0 16px 0;
 }
 
 .news-wrap p {
   text-align: justify;
 }
 
-.news-img1,
-.news-img2,
-.news-img3 {
-  max-width: 100%;
-  border: 4px solid #DDD;
-  box-shadow: 2px 2px 5px #AAA;
-}
-
-
-.article1, 
-.article2,
-.article3 {
-  padding: 10px;
-  /*margin: 1px;*/
-  border-bottom: 1px solid #ddd;
-}
-
-.article1 {
-  padding-bottom: 10px;
-
-}
-
-
 .navbar-fixed-bottom .container {
 	width: 100%;
 	margin-left: 0;
+	margin-top: 0;
 	display: block;
 	background-color: #eee;
-  border: 1px solid #ddd;
+  	border: 1px solid #ddd;
 }
 
 .icons {
@@ -299,13 +341,27 @@ a.symbol:before {
 	color: #dd4b39;
 }
 
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -300px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.sitemap, .page-wrap:after {
+  height: 300px; 
+
+}
+
 .sitemap {
+	clear: both;
 	background-color: #696969;
 	width: 100%;
-	margin: 40px 0 0 0;
-	padding: 20px 40px 100px 40px;
-	position: absolute;
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	float: none;
+	padding: 20px 40px;
+  margin: 50px 0 0 0;
 }
 
 .sitemap h5 {
@@ -326,284 +382,4 @@ a.symbol:before {
   color: #f6b744;
   text-decoration: none;
   cursor: pointer;
-}
-
-/*************************************************************************************************************************************************
-PRODUCTS - PUBLIC SAFETY
-*************************************************************************************************************************************************/
-
-.public-safety-jumbotron {
-	text-align: center;
-	padding: 16px 0;
-}
-.public-safety-jumbotron h3 {
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	text-transform: uppercase;
-	font-size: 1.8em;
-	font-weight: 600;
-	color: white;
-	margin:0;
-}
-
-.tactical-logo {
-	max-width: 70px;
-	margin-bottom: -14px;
-}
-
-.tactical-logo-alta {
-	max-width: 120px;
-	margin-bottom: -6px;
-}
-
-#public-safety-tagline {
-	font-size: 1.2em;
-	text-align: center;
-	color: rgb(10, 114, 181);
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	margin-bottom: 30px;
-}
-
-#public-safety-bullets {
-	margin-top: 40px;
-}
-
-.public-safety-bullet-title{
-	text-align: center;
-	margin-top: 40px;
-	color: rgb(10, 114, 181);
-}
-
-.public-safety-case-study-title  {
-	text-align: center;
-	margin-top: 60px;
-	color: rgb(10, 114, 181);
-}
-
-.public-safety-case-study p {
-	text-align: justify;
-	font-size: 1em;
-}
-
-/*************************************************************************************************************************************************
-CONTACT
-*************************************************************************************************************************************************/
-
-.contact-jumbotron {
-	text-align: center;
-	padding: 30px 0;
-}
-.contact-jumbotron h3 {
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	text-transform: uppercase;
-	font-size: 1.8em;
-	font-weight: 600;
-	color: white;
-	margin: 10px 0 0 0;
-}
-
-.contact-jumbotron h4 {
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	text-transform: uppercase;
-	font-size: 1.2em;
-	font-weight: 600;
-	color: white;
-	margin: 10px 0 0 0;
-	display: inline;
-}
-
-/*.contact-logo {
-	max-width: 70px;
-	margin-top: -25px;
-}*/
-
-.contact-logo-alta {
-	max-width: 120px;
-	margin-top: -25px;
-	/*margin-left: -12px;*/
-}
-.contact {
-	text-align: center;
-	margin-top: 16px;
-}
-.contact h3{
-	color: rgb(10, 114, 181);
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	text-transform: uppercase;
-	font-size: 1.3em;
-
-}
-/*************************************************************************************************************************************************
-RESPONSIVE STUFF
-*************************************************************************************************************************************************/
-@media screen and (max-width: 1400px) {
-	.caption2 {
-		left: 80px;
-	}
-}
-@media screen and (max-width: 960px) {
-	.carousel-caption{
-		margin-bottom: 120px;
-	}
-
-	.caption1 {
-		margin-bottom: 80px;
-	}
-
-	.carousel-caption h3 {
-		font-size: 20px;
-	}
-
-	.carousel-caption h4 {
-		font-size: 18px;
-	}
-
-	.carousel .item {
-		height: 300px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.logo {
-		max-width: 200px;
-	}
-
-	.carousel img {
-		min-height: 0;
-	}
-
-	.carousel .item {
-		height: 260px;
-	}
-
-	.carousel-btn {
-		padding: 5px;
-		font-size: 14px;
-	}
-
-	.navbar-toggle {
-		margin-top: 15px;
-	}
-}
-
-@media screen and (max-width: 640px) {
-	.carousel-caption{
-		margin-bottom: 110px;
-	}
-
-	.caption1 {
-		margin-bottom: 60px;
-	}
-
-	.caption3 {
-		margin-bottom: 100px;
-	}
-
-	.carousel-caption h3 {
-		font-size: 14px;
-
-	}
-
-	.carousel-caption h4 {
-		font-size: 12px;
-		margin-top: -10px;
-	}
-
-	.carousel .item {
-		height: 210px;
-	}
-
-	.carousel-indicators li{
-		width: 10px;
-		height: 10px;
-	}
-
-	.carousel-indicators .active {
-		width: 12px;
-		height: 12px;
-	}
-
-	.thumbs {
-		margin-top: -40px;
-	}
-
-}
-
-@media screen and (max-width: 540px) {
-	.carousel-caption{
-		margin-bottom: 45px;
-	}
-
-	.caption1 {
-		margin-bottom: 0px;
-	}
-
-	.caption2 {
-		margin-bottom: 40px;
-	}
-
-	.caption5 {
-		margin-bottom: 30px;
-	}
-
-	.carousel-caption h3 {
-		font-size: 14px;
-
-	}
-
-	.carousel-caption h4 {
-		font-size: 12px;
-		margin-top: -10px;
-	}
-
-	.carousel .item {
-		height: 180px;
-	}
-
-	.thumbs {
-		margin-top: -60px;
-	}
-
-	.caption .btn {
-		font-size: 12px;
-		padding: 4px 10px;
-	}
-
-	.caption h4 {
-		font-size: 16px;
-	}
-
-	.thumb-icons {
-		font-size: 2em;
-	}
-
-	/*PRODUCTS --> PUBLIC SAFETY*/
-
-	.public-safety-bullet-title {
-		margin-bottom: 30px;
-	}
-
-	.public-safety-bullet-title h3 {
-		font-size: 1.4em;
-	}
-
-	.public-safety-case-study-title {
-		margin-bottom: 30px;
-		margin-top: 30px;
-	}
-
-	.public-safety-case-study-title h3 {
-		font-size: 1.4em;
-	}
-
-	#public-safety-bullets h5,
-	#public-safety-bullets p {
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 460px) {
-
-	.carousel .item {
-		height: 140px;
-	}
 }

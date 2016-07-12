@@ -7,6 +7,7 @@ layout: default
   <li class="active">Contact</li>
 </ol>
 
+<div class="alert alert-success contact-success" role="alert">Thanks for your message! We will get in touch with you soon.</div>
 <div class="hidden alert alert-danger contact-error text-center" role="alert">Please fill out all the fields.</div>
 <div class="hidden alert alert-danger contact-email-error text-center" role="alert">Please enter a valid email address.</div>
 
@@ -14,7 +15,7 @@ layout: default
 <div class="container form-container">
 	<h2 class="header text-center">Contact Us</h2>
 	<h4 class="text-center contact-subtitle">844-446-2582 | info@altapic.com</h4>
-	<form class="col-md-6 col-md-offset-3 contact-form" action="#" method="POST">
+	<form class="col-md-6 col-md-offset-3 contact-form" action="https://formkeep.com/f/c5ac2a80cf28" method="POST">
 	  <div class="form-group form-group-lg">
 	    <!-- <label for="inputName">Name</label> -->
 	    <input type="text" class="form-control" id="inputName" name="name" placeholder="Name">
@@ -24,8 +25,23 @@ layout: default
 	    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
 	  </div>
 	  <textarea class="form-control" id="message" name="message" placeholder="Message" rows="3"></textarea>
-	  <button class="btn btn-default contact-btn">Submit</button>
+	  <button class="btn btn-default contact-btn" data-toggle="modal">Submit</button>
 	</form>
 </div>
 
 
+<!-- 
+<div class="container">
+	<div class="contact col-md-12">
+		<h3>Address</h3>
+		<address>
+		  <strong>Alta Systems Inc.</strong><br>
+		  1361 Alegriano Avenue<br>
+		  Coral Gables, FL 33146<br>
+		</address>
+		<h3>Email</h3>
+		<a href="mailto:info@altapic.com">info@altapic.com</a>
+		<h3>Telephone</h3>
+		<p>844-4-GO-ALTA<br>(844-446-2582)</p>
+	</div>
+</div> -->

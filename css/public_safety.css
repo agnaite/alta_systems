@@ -1,0 +1,55 @@
+/*************************************************************************************************************************************************
+PRODUCTS - PUBLIC SAFETY
+*************************************************************************************************************************************************/
+
+.public-safety-jumbotron {
+	text-align: center;
+	padding: 16px 0;
+}
+.public-safety-jumbotron h3 {
+/*	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+*/	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: 600;
+	color: white;
+	margin:0;
+}
+
+.tactical-logo {
+	max-width: 70px;
+	margin-bottom: -14px;
+}
+
+.tactical-logo-alta {
+	max-width: 120px;
+	margin-bottom: -6px;
+}
+
+#public-safety-tagline {
+	font-size: 1.2em;
+	text-align: center;
+	color: rgb(10, 114, 181);
+/*	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+*/	margin-bottom: 30px;
+}
+
+#public-safety-bullets {
+	margin-top: 40px;
+}
+
+.public-safety-bullet-title{
+	text-align: center;
+	margin-top: 40px;
+	color: rgb(10, 114, 181);
+}
+
+.public-safety-case-study-title  {
+	text-align: center;
+	margin-top: 60px;
+	color: rgb(10, 114, 181);
+}
+
+.public-safety-case-study p {
+	text-align: justify;
+	font-size: 1em;
+}
